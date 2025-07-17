@@ -1,0 +1,9 @@
+.card-hover {
+      border: 2px solid transparent;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card-hover:hover {
+      border-color: #e43d59;
+      box-shadow: 0 0 15px rgba(228, 61, 89, 0.7);
+    }
