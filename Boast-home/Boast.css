@@ -1,0 +1,148 @@
+/* Container around icon */
+.icon-card {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1rem auto;
+}
+
+/* Triangle background */
+.triangle-bg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background-color: #5e5e5e;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  transition: background-color 0.3s ease;
+  z-index: 0;
+}
+
+/* Circular icon */
+.icon-circle {
+  padding: 8px;
+  width: 60px;
+  height: 60px;
+  background-color: #5e5e5e;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Icon image */
+.icon-circle img {
+  width: 30px;
+  height: 30px;
+  transition: filter 0.3s ease;
+}
+
+/* 🔥 Hover: Hotpink triangle & circle, white icon */
+.icon-card:hover .triangle-bg,
+.icon-card:hover .icon-circle {
+  background-color: hotpink;
+}
+
+.icon-card:hover .icon-circle img {
+  filter: brightness(0) invert(1);
+}
+
+
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  /* Pink on hover */
+  .navbar-nav .nav-link:hover {
+    color: hotpink !important;
+    text-decoration: none;
+  }
+
+  /* Optional: Highlight active link */
+  .navbar-nav .nav-link.active {
+    color: hotpink !important;
+    border-bottom: 2px solid hotpink;
+  }
+  .limited-height {
+    height: 80vh;
+    object-fit: cover;
+  }
+      .pricing-card {
+      position: relative;
+      overflow: hidden;
+      background-color: white;
+      padding: 2rem;
+      text-align: center;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Triangle corners */
+    .pricing-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 50px solid rgba(0, 0, 0, 0.638);
+      border-right: 50px solid transparent;
+      z-index: 1;
+    }
+
+    .pricing-card::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-bottom: 50px solid rgba(0, 0, 0, 0.638);
+      border-left: 50px solid transparent;
+      z-index: 1;
+    }
+
+    /* Ensure content is above triangles */
+    .pricing-card-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Optional: Highlighted plan */
+    .pricing-card.business {
+      background-color: hotpink;
+      color: white;
+    }
+
+    .pricing-card.business::before,
+    .pricing-card.business::after {
+      border-top-color: white;
+      border-bottom-color: white;
+    }
+
+  .icon-circle:hover {
+    background-color: hotpink;
+  }
+/* ----------- */
+.feature-icon {
+      border-radius: 50%;
+      background-color: hotpink;
+      height: 40px;
+      width: 40px;
+      border: solid white 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .form-section input,
+    .form-section textarea {
+      margin-bottom: 1rem;
+    }
