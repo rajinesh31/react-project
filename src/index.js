@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import App from './componends';
 import reportWebVitals from './reportWebVitals';
-import GameBoard from './Components/GameBoard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GameBoard />
+    <App />
   </React.StrictMode>
 );
 
