@@ -2,15 +2,21 @@ import React from 'react';
 import Header from './components/Header';
 import Main from './components/main';
 import Footer from './components/Footer';
-function App() {
+import UsestateEx1  from './components/UsestateEx1';
+import Weather from './components/Weather';
+import Map from './components/Map';
+const App = () => {
   return (
     <div>
-            <Header />
+            {/* <Header />
             <Main />
-            <Footer/>
+            <Footer/> */}
+            <UsestateEx1 />
+            <Weather />
+            <Map />
         </div>
   );
-}
+};
 
 export default App;
 // import React from 'react';
