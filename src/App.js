@@ -5,15 +5,29 @@ import Footer from './components/Footer';
 import UsestateEx1  from './components/UsestateEx1';
 import Weather from './components/Weather';
 import Map from './components/Map';
+import Useffect from './components/Useffect';
+import './App.css';
+import NavBar from './NavBar';
+import Delhi from './container/Delhi'
+import { GiftProvider } from './Context/Ex';
 const App = () => {
+
+  const gift = "Apple"
+
   return (
     <div>
             {/* <Header />
             <Main />
-            <Footer/> */}
+            <Footer/>
             <UsestateEx1 />
             <Weather />
             <Map />
+            <Useffect /> */}
+            <h1>sending gift to bangalure</h1>
+            <GiftProvider>
+              <Delhi gift = {gift}/> 
+            </GiftProvider>
+
         </div>
   );
 };
